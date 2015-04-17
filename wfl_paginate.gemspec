@@ -7,10 +7,10 @@ Gem::Specification.new do |spec|
   spec.name          = "wfl_paginate"
   spec.version       = WflPaginate::VERSION
   spec.authors       = ["wpzero"]
-  spec.email         = ["wangping@galiumsof.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.email         = ["wpcreep@gmail.com"]
+  spec.summary       = %q{paginate}
+  spec.description   = "a simple paginate module"
+  spec.homepage      = "https://github.com/wpzero/wfl_paginate"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -19,6 +19,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "activesupport", ">= 3.2.0"
+  spec.add_dependency "activemodel", ">= 3.2.0"
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake"
 end
