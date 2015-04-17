@@ -24,18 +24,24 @@ include the module to the target record class
 such as:
 
 
-`WflPaginate.configure do |config|
+```
+WflPaginate.configure do |config|
 	config.per_page = 20
-end`
+end
+```
 
-`class User < ActiveRecord::Base
+```
+class User < ActiveRecord::Base
 	include WflPaginate::Paginate
-end`
+end
+```
 
-`User.paginate({
+```
+User.paginate({
 	per_page: 10,
 	page_no: 20
-})`
+})
+```
 
 
 ## Contributing
