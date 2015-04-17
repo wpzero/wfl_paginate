@@ -1,5 +1,6 @@
 require "wfl_paginate/version"
 
+
 module WflPaginate
   # Your code goes here...
 	class << self
@@ -16,3 +17,4 @@ module WflPaginate
 	end
 	
 end
+require "wfl_paginate/paginate"
