@@ -1,6 +1,6 @@
 # WflPaginate
 
-TODO: Write a gem description
+this is only a simple paginate.
 
 ## Installation
 
@@ -18,7 +18,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+in application.rb to set the default perpage number of record
+include the module to the target record class
+
+such as:
+
+
+`WflPaginate.configure do |config|
+	config.per_page = 20
+end`
+
+`class User < ActiveRecord::Base
+	include WflPaginate::Paginate
+end`
+
+`User.paginate({
+	per_page: 10,
+	page_no: 20
+})`
+
 
 ## Contributing
 

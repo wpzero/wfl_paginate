@@ -17,4 +17,5 @@ module WflPaginate
 	end
 	
 end
+
 require "wfl_paginate/paginate"
